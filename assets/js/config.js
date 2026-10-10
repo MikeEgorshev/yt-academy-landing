@@ -9,11 +9,13 @@ window.SITE_CONFIG = {
   youtubeId: "",
 
   /* Куда уходят заявки (имя + телефон).
-     URL веб-приложения Google Apps Script, заканчивается на /exec.
-     Скрипт лежит в integrations/google-apps-script.gs: он пишет заявку
-     в Google Таблицу и присылает уведомление в Telegram.
-     Пусто — демо-режим: заявка только печатается в консоль браузера. */
-  leadEndpoint: "",
+     Версия для Vercel: обработчик api/lead.js на этом же сайте. Он отправляет заявку
+     в Telegram и/или Google Таблицу — что именно, задают переменные окружения проекта
+     на Vercel (см. README, «Деплой на Vercel»).
+     Можно указать и URL веб-приложения Google Apps Script (заканчивается на /exec,
+     скрипт — integrations/google-apps-script.gs). Пусто — демо-режим: заявка только
+     печатается в консоль браузера. */
+  leadEndpoint: "/api/lead",
 
   /* Куда перейти после заявки — Telegram-бот с автоплатежами.
      Например "https://t.me/academy_pay_bot". К ссылке добавится
