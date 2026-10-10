@@ -2,6 +2,14 @@
 
 Страница воронки мини-курса, версия без геймификации (основная). Обычный статический сайт: HTML, CSS и JavaScript, ничего собирать не нужно.
 
+## Версии (ветки)
+
+| Ветка | Для чего |
+|---|---|
+| `main` | обычный статический сайт для любого хостинга: GitHub Pages, Netlify, свой сервер |
+| [`vercel`](https://github.com/MikeEgorshev/yt-academy-landing/tree/vercel) | для Vercel: настройки `vercel.json` и обработчик заявок `api/lead` (заявки уходят в Telegram и/или Google Таблицу) |
+| [`tilda`](https://github.com/MikeEgorshev/yt-academy-landing/tree/tilda) | для Тильды: код для блока «HTML-код» (T123) и для HEAD страницы в папке `tilda/` |
+
 | Файл | Что это |
 |---|---|
 | `index.html` | сама страница |
